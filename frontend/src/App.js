@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+console.log('App initialized');
 
-const API_URL = 'https://backend-service-production-5a87.up.railway.app/api';
-
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+console.log('API URL:', API_URL);
 function App() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState('');
