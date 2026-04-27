@@ -115,6 +115,6 @@ jobs:
           RAILWAY_TOKEN: ${{secrets.RAILWAY_TOKEN}}
         run: |
           npm install -g @railway/cli
-          railway redeploy --service 1320a7e1-e71a-43f9-8f57-8c62ee4dbebd --yes
-          railway redeploy --service 5906ccb7-10d6-4502-9dc0-11b7d1bb462f --yes
+          railway redeploy --service 1320a7e1-e71a-43f9-8f57-8c62ee4dbebd --environment production --yes --yes 
+          railway redeploy --service 5906ccb7-10d6-4502-9dc0-11b7d1bb462f --environment production --yes
           echo "Install Railway CLI and trigger redeploy"
