@@ -16,4 +16,4 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - backend
+      - https://backend-service-production-5a87.up.railway.app/
